@@ -70,5 +70,4 @@ build_gateway_and_push_to_docker_hub:
         with:
           context: ./gateway/
           push: true
-          # Тут вместо username должен быть ваш логин на Docker Hub
-          tags: ${{ secrets.DOCKER_USERNAME }}/taski_gateway:latest
+          tags: odigvard/taski_gateway:latest
